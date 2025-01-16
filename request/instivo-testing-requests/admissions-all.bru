@@ -1,0 +1,18 @@
+meta {
+  name: admissions-all
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/admission?page=0&size=2&sortBy=admissionDate&sortDir=asc
+  body: none
+  auth: none
+}
+
+params:query {
+  page: 0
+  size: 2
+  sortBy: admissionDate
+  sortDir: asc
+}

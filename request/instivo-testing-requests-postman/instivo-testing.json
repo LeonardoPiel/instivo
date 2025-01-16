@@ -1,0 +1,114 @@
+{
+  "info": {
+    "name": "instivo-testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "admissions",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/admission",
+          "host": [],
+          "path": [],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"admissionDate\": \"1970-06-14\",\n  \"grossSalary\": 2000.90\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "admissions-all",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/admission?page=0&size=2&sortBy=admissionDate&sortDir=asc",
+          "host": [],
+          "path": [],
+          "query": [
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "2"
+            },
+            {
+              "key": "sortBy",
+              "value": "admissionDate"
+            },
+            {
+              "key": "sortDir",
+              "value": "asc"
+            }
+          ],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "admissions-calculate",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/admission/calculate",
+          "host": [],
+          "path": [],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"admissionDate\": \"2022-09-10\",\n  \"grossSalary\": 9000\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "admissions-byid",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/admission/67883c6d64441910413d9afc",
+          "host": [],
+          "path": [],
+          "query": [],
+          "variable": []
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+meta {
+  name: admissions-calculate
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/admission/calculate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "admissionDate": "2022-09-10",
+    "grossSalary": 9000
+  }
+}
