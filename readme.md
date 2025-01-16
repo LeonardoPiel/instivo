@@ -42,6 +42,9 @@ Sua aplicação estará rodando na porta 8085 do seu host local. Você pode aces
 
 http://localhost:8085
 
+Para verificar o swagger:
+http://localhost:8085/swagger-ui/index.html
+
 ### 5. Acessar o MongoDB
 O MongoDB estará disponível na porta 27017 no seu host local. Você pode conectar a ele utilizando o cliente MongoDB de sua preferência, como o MongoDB Compass ou a linha de comando, utilizando a seguinte URI de conexão:
 
@@ -59,6 +62,7 @@ Isso irá parar e remover os containers, mas os dados do MongoDB serão preserva
 ###### 7. Informações Adicionais
 MongoDB: A senha de acesso ao MongoDB foi definida como Instivo123# no arquivo docker-compose.yml.
 Spring Boot: A aplicação Spring Boot utiliza a variável de ambiente SPRING_DATA_MONGODB_URI para se conectar ao MongoDB.
+Na pasta: instivotesting/request/instivo-testing-requests-postman estão exemplos de requisição com postman. Na outra pasta request/instivo-testing-requests são requisições usando o app brunoAPI para client offline de requisições.
 
 
 
